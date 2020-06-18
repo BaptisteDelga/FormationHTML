@@ -1,0 +1,138 @@
+<!DOCTYPE html">
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Formulaires HTML</title>
+    <link rel="stylesheet" href="../Cours_HTML/Documents/css/style.css">    
+</head>
+
+<body>
+    <!-- formulaire1-->
+    <form method="post" action="mailto:baptiste.delga@sfr.fr">
+        <p>
+            <label for="name">Entrez votre nom</label>
+            <input type="text" name="name" id="name" />
+            <br>
+            <label for="mail">Entrez votre adresse mail</label>
+            <input type="email" name="mail" id="mail" />
+            <br>
+            <label>Etes-vous client de la fnac? </label>
+            <label for="choice">OUI</label>
+            <input type="radio" name="choice" id="choice" />
+            <label for="choice">NON</label>
+            <input type="radio" name="choice" id="choice" />
+            <br>
+            <input type="submit" value="Envoyer" />
+            <input type="reset" value="Annuler" />
+        </p>
+
+    </form>
+    <!-- formulaire1 aligné avec des tableaux-->
+    <form>
+        <table>
+            <tr>
+                <td><label for="name">Entrez votre nom</label></td>
+                <td><input type="text" name="name" id="name" /></td>
+            </tr>
+            <tr>
+                <td><label for="mail">Entrez votre adresse mail</label></td>
+                <td><input type="email" name="mail" id="mail" /></td>
+            </tr>
+            <tr>
+                <td><label for="client">Etes-vous client de la fnac?</label></td>
+                <td>OUI<input type="radio" name="client" id="client" />
+                    NON<input type="radio" name="client" id="client" /></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Envoyer" /></td>
+                <td><input type="reset" value="Annuler" /></td>
+            </tr>
+        </table>
+    </form>
+
+    <!--correction-->
+
+    <h2>HTML Form 1</h2>
+
+    <form action="mailto:kyo.alone06@gmail.com" method="POST">
+        <table>
+            <tr>
+                <td>Entrez votre nom :</td>
+                <td>
+                    <input type="text" id="fname" name="fname" value="John">
+                </td>
+            </tr>
+            <tr>
+                <td>Entrez votre prénom :</td>
+                <td>
+                    <input type="text" id="lname" name="lname" value="Doe">
+                </td>
+            </tr>
+            <tr>
+                <td>Etes-vous à la Fnac :</td>
+                <td>OUI<input type="radio" name="lfnac" value="oui" checked>
+                    NON<input type="radio" name="lfnac" value="non">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Submit">
+                </td>
+                <td>
+                    <input type="reset" value="Annuler">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <h2 margin-top: 20px; color: blue; font-size: 40px; text-decoration: underline;"> HTML Form 2</h2>
+    <p style="background-color:yellow">
+        Ce texte a un arrière-plan jaune
+        </p>
+    <form action="mailto:kyo.alone06@gmail.com" method="post">
+        Entrez votre nom <input type="text" name=nomvalue="John"><br>
+        Entrez votre adresse e-mail <input type="email" name=emailvalue="johndoe@gmail.com"><br>
+        Etes-vous client de la fnac ?
+        OUI <input type="radio" name="client" value="oui" checked>
+        NON <input type="radio" name="client" value="non"><br>
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Annuler">
+    </form>
+
+    <h2>HTML Form 3</h2>
+
+    <form action="mailto:kyo.alone06@gmail.com" method="POST">
+        <label for="fname">Entrez votre nom :</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Entrez votre adresse e-mail :</label><br>
+        <input type="email" id="lname" name="lname" value="johndoe@gmail.com"><br>
+        <label>Etes-vous à la Fnac :</label><br>
+        OUI<input type="radio" name="lfnac" value="oui" checked>
+        NON<input type="radio" name="lfnac" value="non"><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Annuler">
+    </form>
+
+    <!--autres exos-->
+    <form>
+        <select name="nom">
+            <option>Lundi</option>
+            <option>Mardi</option>
+            <option>Mercredi</option>
+            <option>Jeudi</option>
+            <option>Vendredi</option>
+        </select>
+    </form>
+
+    <label for="cars">Choose a car:</label>
+    <select id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="vw">VW</option>
+        <option value="audi" selected>Audi</option>
+    </select>
+
+</body>
+
+</html>
